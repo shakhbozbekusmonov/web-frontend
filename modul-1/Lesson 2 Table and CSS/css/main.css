@@ -1,0 +1,21 @@
+/* CSS ni - external usulda yozili */
+
+h3{
+    font-size: 55px;
+    font-family: "Bauhaus 93";
+    color: #00ffff;
+    background-color: #000fff;
+    text-align: center;
+}
+
+.text{
+    font-size: 65px;
+    font-family: "Mongolian Baiti";
+    color: #fff;
+    background-color: #000;
+}
+
+#text{
+    font-size: 45px;
+    font-family: "MS Reference Sans Serif";
+}

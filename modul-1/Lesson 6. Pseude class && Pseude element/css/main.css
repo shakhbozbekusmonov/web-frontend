@@ -1,0 +1,125 @@
+
+
+.link:visited{
+    color: #ff7f50;
+}
+/* visited - elementga kirilganda ya'ni tashrif buyurilganda ishlaydi */
+
+.link:focus{
+    font-size: 25px;
+    color: #ff0000;
+}
+/* focus - elementni ustiga bir marta bosilganda ishlaydi,
+ boshqa yerga bosilganda focus yo'qoladi */
+
+.link:hover{
+    font-size: 35px;
+    color: #000fff;
+}
+/* hover - elementni ustiga sichqoncha olib borilganda ishlaydi */
+
+.link:active{
+    font-size: 45px;
+    color: #008000;
+}
+/* active - elementni ustiga bosib turilganda ishlaydi */
+
+/*.link:first-child{*/
+/*    font-size: 25px;*/
+/*    background-color: #000;*/
+/*}*/
+/* first-child - bir hil class berilgan elementlarni,
+ birinchi bolasiga ta'sir qiladi, ya'ni birinchi bolasi degani */
+
+/*.link:last-child{*/
+/*    font-size: 25px;*/
+/*    background-color: #8a2;*/
+/*}*/
+/* last-child - bir hil class berilgan elementlarni,
+ oxirgi bolasiga ta'sir qiladi, ya'ni oxirigi bolasi degani */
+
+/*.link:nth-child(odd){*/
+/*    font-size: 25px;*/
+/*    background-color: #000fff;*/
+/*}*/
+/* nth-child(odd) - bir hil class berilgan elementlarni,
+ faqatgina toq elementlariga ta'sir qiladi, odd - toqlari degani */
+
+/*.link:nth-child(even){*/
+/*    font-size: 25px;*/
+/*    background-color: #ff0000;*/
+/*}*/
+/* nth-child(even) - bir hil class berilgan elementlani,
+ faqatgina juftlariga ta'sir qiladi, even - juftlari degani */
+
+.link:nth-child(4){
+    font-size: 25px;
+    background-color: #ffff00;
+}
+/* nth-child(number) - bir hil class berilga elementlarni,
+ qaysi birini raqam berib belgilasangiz shunisiga ta'sir qiladi */
+
+.text:first-line{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+/* first-line - elementni birinchi qatoriga(liniyasiga) ta'sir qiladi */
+
+.text:first-letter{
+    font-size: 35px;
+    font-family: "Arial Black";
+    background-color: #00ffff;
+}
+/* first-letter - elementni birinchi harfi degani */
+
+.text{
+    user-select: none;
+}
+
+.text::before{
+    content: "This is before! ";
+}
+/* before - oldindan */
+
+.text::after{
+    content: " This is after!";
+}
+/* after - oxiridan */
+
+.card{
+    width: 350px;
+    background-color: #00ffff;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.card .card__text::selection{
+    color: #008000;
+    background-color: #ffff00;
+}
+
+.card::after{
+    content: '';
+    border: 15px solid;
+    position: absolute;
+    bottom: -30px;
+    /*border-left-color: transparent;*/
+    /*border-right-color: transparent;*/
+    /*border-bottom-color: transparent;*/
+    border-color: #00ffff transparent transparent transparent;
+}
+
+/*.card:hover{*/
+/*    background-color: #ff0000;*/
+/*}*/
+
+/*.card:hover::after{*/
+/*    border-color: red transparent transparent transparent;*/
+/*}*/
+
+.card:hover{
+    box-shadow: 0 0 3px 1px #888;
+}

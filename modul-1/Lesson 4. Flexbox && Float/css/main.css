@@ -1,0 +1,52 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    /* flex, inline, block, inline-flex, inline-block, none */
+    flex-wrap: wrap;
+    /* nowrap */
+    justify-content: space-between;
+    /* flex-start, flex-end, center, space-around, space-evenly, space-between */
+    align-items: center;
+    /* flex-start, flex-end, center,  stretch baseline */
+    flex-direction: row;
+    /* row, row-reverse, column, column-reverse */
+}
+
+.container .card{
+    width: 30%;
+    background-color: #000fff;
+    margin-top: 30px;
+}
+
+.container .card .card__img{
+    width: 100%;
+}
+
+
+.container-float{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-float .card{
+    width: 30%;
+    background-color: #ff0000;
+    float: left;
+    margin-top: 30px;
+}
+
+.container-float .card .card__img{
+    width: 100%;
+}
+
+.container-float .clear-float{
+    clear: both;
+}
