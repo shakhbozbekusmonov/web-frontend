@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30%;
+    border: 2px solid #000fff;
+    background-color: #00ffff;
+    margin-top: 30px;
+}
+
+.card .card__img{
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .card{
+        width: 45%;
+    }
+    body{
+        background-color: #ff7f50;
+    }
+}
+
+@media (max-width: 554px) {
+    .card{
+        width: 100%;
+    }
+    body{
+        background-color: #fff000;
+    }
+}
+
+.card__title{
+    font-family: 'SF Pro Display';
+    font-size: 14px;
+    line-height: 17px;
+    color: #343434;
+}
